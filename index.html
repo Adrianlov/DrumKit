@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>DrumKit</title>
+</head>
+<body>
+	<div class="keys">
+		<div data-key="83" class="key">
+			<kbd>S</kbd>
+			<span class="sound">Kick</span>
+		</div>
+		<div data-key="70" class="key">
+			<kbd>F</kbd>
+			<span class="sound">Snare</span>
+		</div>
+		<div data-key="71" class="key">
+			<kbd>G</kbd>
+			<span class="sound">HiHat</span>
+		</div>
+		<div data-key="32" class="key">
+			<kbd>Space</kbd>
+			<span class="sound">Bass</span>
+		</div>
+	</div>
+
+	<audio data-key="83"  src="Audio/Kick.wav"></audio>
+	<audio data-key="70"  src="Audio/Snare.wav"></audio>
+	<audio data-key="71"  src="Audio/HiHat.wav"></audio>
+	<audio data-key="32"  src="Audio/Bass.wav"></audio>
+	
+	<script src="index.js"></script>
+</body>
+</html>
