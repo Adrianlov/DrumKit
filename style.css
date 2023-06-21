@@ -50,6 +50,11 @@ kbd{
 	display: block;
 	font-size: 1.8rem;
 }
+.mystyle{
+	transform: scale(1.1);
+	border-color: #ffc600;
+	box-shadow: 0 0 10px #ffc600;
+}
 
 
 @media screen and (max-width: 768px){
