@@ -30,7 +30,7 @@ box-sizing: border-box;
 	align-items: center;
 	flex-direction: column;
 	justify-content: space-evenly;
-	transition: all 0.09ms;
+	transition: all 0.07ms;
 	color: white;
 	background: rgba(0,0,0,0.4);
 	text-shadow: 0 0 5px black;
@@ -50,16 +50,27 @@ kbd{
 	display: block;
 	font-size: 1.8rem;
 }
+
+
 .mystyle{
 	transform: scale(1.1);
 	border-color: #ffc600;
 	box-shadow: 0 0 10px #ffc600;
+	
 }
 
 
 @media screen and (max-width: 768px){
 	.keys{
 		flex-direction: column;
+	}
+
+	kbd{
+		display: none;
+	}
+
+	span{
+		font-size: large;
 	}
 
 }
