@@ -5,12 +5,12 @@ if(!audio) return
 audio.currentTime = 0
 audio.play()
 key.classList.add('playing')
-console.log(key)
 });
 
 function removeTransition(e){
     if(e.propertyName != 'transform') return
     this.classList.remove('playing')
+    this.classList.remove('mystyle')
 }
 
 const keys = document.querySelectorAll('.key')
@@ -19,10 +19,16 @@ keys.forEach(key => key.addEventListener('transitionend', removeTransition))
 
 
 
+
+
 //For the mobile version
+
+
 
     let click1 = document.getElementById('1')
     click1.addEventListener('click', function(){
+        click1.classList.add('mystyle')
+        removeTransition
         let S1 = document.getElementById('snare')
         S1.currentTime = 0
         S1.play()
@@ -30,6 +36,8 @@ keys.forEach(key => key.addEventListener('transitionend', removeTransition))
    
     let click2 = document.getElementById('2')
     click2.addEventListener('click', function(){
+        click2.classList.add('mystyle')
+        removeTransition
         let S2 = document.getElementById('kick')
         S2.currentTime = 0
         S2.play()
@@ -37,6 +45,8 @@ keys.forEach(key => key.addEventListener('transitionend', removeTransition))
 
     let click3 = document.getElementById('3')
     click3.addEventListener('click', function(){
+        click3.classList.add('mystyle')
+        removeTransition
         let S3 = document.getElementById('hihat')
         S3.currentTime = 0
         S3.play()
@@ -44,10 +54,27 @@ keys.forEach(key => key.addEventListener('transitionend', removeTransition))
 
     let click4 = document.getElementById('4')
     click4.addEventListener('click', function(){
+        click4.classList.add('mystyle')
+        removeTransition
         let S4 = document.getElementById('bass')
         S4.currentTime = 0
         S4.play()
     })
+
+
+
+
+  
+   
+  
+
+  
+
+
+
+
+
+
 
  
 
